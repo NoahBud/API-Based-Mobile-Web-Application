@@ -6,14 +6,14 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\Copy;
 
-
 class CopySeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
-    {
+    { 
         Copy::factory()->count(20)->create();
+        
     }
 }

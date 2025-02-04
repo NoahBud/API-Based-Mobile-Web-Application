@@ -14,10 +14,15 @@ class Copy extends Model
         'numero_exemplaire', 
         'etat', 
         'disponibilite', 
-        'book_id'
+        'book_id',
+        'box_id'
     ];
 
     public function book() : BelongsTo {
         return $this->belongsTo(Book::class);
+    }
+
+    public function box() : BelongsTo{
+        return $this->belongsTo(Box::class);
     }
 }

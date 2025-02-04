@@ -11,11 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('copies', function (Blueprint $table) {
-            $table->string("num_exemplaire")->unique();
-            $table->string("etat", 20);
-            $table->boolean("disponibilite")->default(false);
-            $table->timestamps();
+        Schema::table('copies', function (Blueprint $table) {
+            $table->foreignId('box_id')->constrained();
         });
     }
 
@@ -24,6 +21,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('copies');
+        Schema::table('copies', function (Blueprint $table) {
+            $table->dropForeign(['box_id']);
+        });
     }
 };

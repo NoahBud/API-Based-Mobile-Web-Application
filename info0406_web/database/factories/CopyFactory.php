@@ -3,6 +3,8 @@
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+use App\Models\Book;
+use App\Models\Box;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Copy>
@@ -19,12 +21,14 @@ class CopyFactory extends Factory
     public function definition(): array
     {
         $booksID = Book::get()->pluck('id');
+        $boxesID = Box::get()->pluck('id');
 
         return [
-            'numero_exemplaire' => self::$counter++, 
+            'num_exemplaire' => self::$counter++, 
             'etat' => $this->faker->randomElement(['neuf', 'bon', 'usé']),
             'disponibilite' => $this->faker->boolean(),
             'book_id' => fake()->randomElement($booksID), //on récupère un id aléatoire parmi les livres
+            'box_id' => fake()->randomElement($boxesID),
             'created_at' => now(),
             'updated_at' => now(),
         ];
