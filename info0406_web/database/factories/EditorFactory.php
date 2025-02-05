@@ -16,8 +16,32 @@ class EditorFactory extends Factory
      */
     public function definition(): array
     {
+        $editors = [
+            'Gallimard',
+            'Flammarion',
+            'Le Seuil',
+            'Hachette Livre',
+            'Fayard',
+            'Albin Michel',
+            'Grasset',
+            'Actes Sud',
+            'Robert Laffont',
+            'Éditions de Minuit',
+            'Penguin Random House',
+            'HarperCollins',
+            'Simon & Schuster',
+            'Macmillan Publishers',
+            'Scholastic',
+            'Bloomsbury',
+            'Oxford University Press',
+            'Cambridge University Press',
+            'Springer'
+        ];
+
         return [
-            //
+            'name' => fake()->randomElement($editors),
+            'address' => $this->faker->address(),
+            'mail' => $this->faker->email()
         ];
     }
 }
