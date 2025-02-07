@@ -18,7 +18,9 @@ class DatabaseSeeder extends Seeder
             EditorSeeder::class,
             AuthorSeeder::class,
             BookSeeder::class, 
-            CopySeeder::class
+            CopySeeder::class,
+            RoleSeeder::class,
+            UserSeeder::class
         ]);
     }
 }

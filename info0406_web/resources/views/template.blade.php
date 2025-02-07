@@ -6,6 +6,12 @@
     <title>@yield('title')</title> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+    </style>
     @yield('script')
 </head>
     <body>
@@ -13,7 +19,7 @@
             <h1>@yield('title')</h1> 
             @yield('content')
         <footer style="text-align: center;">
-    	   Made By GOATS
+    	   <p class="mb-0">&copy; 2025, Book'in - Partage de la lecture</p>
         </footer>
     </body>
 </html>
