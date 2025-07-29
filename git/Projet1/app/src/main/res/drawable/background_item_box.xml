@@ -1,0 +1,10 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Couleur de fond bleue moins sombre -->
+    <solid android:color="#2E72CB"/>
+
+    <!-- Coins arrondis -->
+    <corners android:radius="16dp"/>  <!-- Ajuste la valeur pour un rayon plus ou moins arrondi -->
+
+</shape>

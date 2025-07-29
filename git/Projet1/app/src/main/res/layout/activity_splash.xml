@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/splashBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/letterB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B"
+            android:textSize="36sp"
+            android:textColor="@android:color/white"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/letterO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:textSize="36sp"
+            android:textColor="@android:color/white"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/letterO2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:textSize="36sp"
+            android:textColor="@android:color/white"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/letterK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="k"
+            android:textSize="36sp"
+            android:textColor="@android:color/white"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/letterApostrophe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="'"
+            android:textSize="36sp"
+            android:textColor="@android:color/white"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/letterI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="i"
+            android:textSize="36sp"
+            android:textColor="@android:color/white"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/letterN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="n"
+            android:textSize="36sp"
+            android:textColor="@android:color/white"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</LinearLayout>

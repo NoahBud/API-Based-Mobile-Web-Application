@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+
+    <group android:name="background">
+        <path
+            android:fillColor="#00B0FF"
+        android:pathData="M10,10 h80 a10,10 0 0,1 10,10 v60 a10,10 0 0,1 -10,10 h-80 a10,10 0 0,1 -10,-10 v-60 a10,10 0 0,1 10,-10 z"/>
+    </group>
+
+
+    <group android:name="e-letter">
+        <path
+            android:fillColor="#ffffff"
+        android:pathData="M30,50 h40 a10,10 0 0,0 10,-10 v-10 a10,10 0 0,0 -10,-10 h-40 a10,10 0 0,0 -10,10 v10 a10,10 0 0,0 10,10 z"/>
+    </group>
+
+    <!-- Ajouter le symbole de la boîte -->
+    <group android:name="box">
+        <path
+            android:fillColor="#ffffff"
+        android:pathData="M35,55 h30 a5,5 0 0,1 5,5 v25 a5,5 0 0,1 -5,5 h-30 a5,5 0 0,1 -5,-5 v-25 a5,5 0 0,1 5,-5 z"/>
+    </group>
+
+</vector>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.RegisterActivity">
+
+    <!-- Titre "Créer un compte" -->
+    <TextView
+        android:id="@+id/tvRegisterTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Créer un compte"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp" />
+
+    <!-- Champ Nom Complet avec icône -->
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nom complet"
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_below="@id/tvRegisterTitle"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_edittext"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:drawableStart="@drawable/ic_user"
+        android:drawablePadding="8dp" />
+
+    <!-- Champ Email avec icône -->
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Adresse e-mail"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_below="@id/nameEditText"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_edittext"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:drawableStart="@drawable/ic_email"
+        android:drawablePadding="8dp" />
+
+    <!-- Champ Mot de Passe avec icône -->
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mot de passe"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_below="@id/emailEditText"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_edittext"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawablePadding="8dp" />
+
+    <!-- Champ Confirmer Mot de Passe avec icône -->
+    <EditText
+        android:id="@+id/confirmPasswordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirmer le mot de passe"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_below="@id/passwordEditText"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_edittext"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawablePadding="8dp" />
+
+    <!-- Bouton "Créer un compte" -->
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Créer un compte"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:paddingHorizontal="55dp"
+        android:paddingVertical="4dp"
+        android:elevation="1dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/confirmPasswordEditText"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_button_green"
+        app:backgroundTint="@null" />
+
+    <!-- Bouton Retour sous forme d'icône (en haut à gauche) -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/back"
+        android:elevation="4dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="16dp"
+        android:background="@android:color/transparent"
+        app:backgroundTint="@null"
+        app:icon="@drawable/ic_back"
+        app:iconGravity="textStart"
+        app:iconPadding="10dp"
+        app:iconSize="32dp"
+        app:iconTint="@color/black"
+        app:cornerRadius="16dp" />
+
+    <!-- Illustration en bas à droite -->
+    <ImageView
+        android:id="@+id/ivIllustration"
+        android:layout_width="match_parent"
+        android:layout_height="382dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="-15dp"
+        android:contentDescription="@string/register_illustration"
+        android:radius="100dp"
+        android:src="@drawable/ic_register_illustration" />
+
+</RelativeLayout>

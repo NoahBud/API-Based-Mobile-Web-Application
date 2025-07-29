@@ -1,0 +1,595 @@
+@import "bootstrap";
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+// pour les logos de téléchargement
+.fixed-dimensions {
+    width: 320px;
+    height: 100px;
+}
+
+body {
+    font-family: 'Copperplate', sans-serif; // Copperplate ou Poppins ?
+    transition: background 0.5s ease-in-out, color 0.5s ease;
+    background: #ffffff;
+    color: #1d1d1f;
+    height: 100%;
+    //color: #333;
+}
+
+header {
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(15px);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+
+footer {
+    background-color: #1d1d1f;
+    color: #f5f5f7;
+    padding: 20px 0;
+    font-size: 14px;
+    text-align: center;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+
+.hero {
+    background: linear-gradient(135deg, #5976cd, #405fdd);
+    border-radius: 3%;
+    color: white;
+    padding: 120px 0;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 4.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    animation: fadeInDown 1.5s ease;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    animation: fadeInDown 1.5s ease;
+}
+
+.hero p {
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+    animation: fadeInUp 1.5s ease;
+}
+
+.hero .btn {
+    font-size: 1.3rem;
+    padding: 12px 35px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    animation: fadeIn 2s ease;
+}
+
+.hero .btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+.card {
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.card-body {
+    padding: 25px;
+}
+
+.card-title {
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+    color: #030303;
+}
+
+.card-text {
+    font-size: 1.1rem;
+    color: #9da2a6;
+}
+
+.map-container {
+    height: 450px;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.features {
+    padding: 100px 0;
+    background: #f5f5f7;
+    border-radius: 4%;
+}
+
+.features h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 50px;
+    animation: fadeInDown 1.5s ease;
+}
+
+.features .card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.features .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.features .card-title {
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+    color: #1d1d1f;
+}
+
+.features .card-text {
+    font-size: 1.1rem;
+    color: #6c757d;
+}
+
+.concept {
+    padding: 100px 0;
+    background: #ffffff;
+}
+
+.concept h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 50px;
+    animation: fadeInDown 1.5s ease;
+}
+
+.concept p {
+    font-size: 1.3rem;
+    color: #6c757d;
+    animation: fadeInUp 1.5s ease;
+}
+
+.dropdown-menu {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(15px);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.dropdown-item {
+    font-size: 1.1rem;
+    color: #1d1d1f;
+    transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #6e7dff;
+    color: #ffffff;
+    transform: translateX(10px);
+}
+
+.btn-outline-light {
+    border-color: #1d1d1f;
+    color: #1d1d1f;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+    background-color: #1d1d1f;
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+    padding: 12px 30px;
+    border-radius: 12px;
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    z-index: 1;
+    transition: all 0.5s ease;
+}
+
+.btn:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 0%, transparent 100%);
+    z-index: -1;
+}
+
+.table {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.badge {
+    padding: 8px 16px;
+    border-radius: 10px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.badge-gradient-info {
+    background: linear-gradient(135deg, #0ea5e9, #3b82f6);
+    color: white;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
+}
+
+.badge-gradient-info::before,
+.badge-gradient-success::before,
+.badge-gradient-warning::before,
+.badge-gradient-warning2::before,
+.badge-gradient-secondary::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, transparent 50%);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+
+.badge-gradient-success {
+    background: linear-gradient(135deg, #10b981, #059669);
+    color: white;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-weight: 600;
+    box-shadow: 0 5px 15px rgba(16, 185, 129, 0.25);
+    position: relative;
+    overflow: hidden;
+}
+
+.badge-gradient-danger {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    color: white;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-weight: 600;
+    box-shadow: 0 5px 15px rgba(239, 68, 68, 0.25);
+    position: relative;
+    overflow: hidden;
+}
+
+.badge-gradient-warning {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    color: white;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-weight: 600;
+    box-shadow: 0 5px 15px rgba(245, 158, 11, 0.25);
+    position: relative;
+    overflow: hidden;
+}
+
+.badge-gradient-warning2 {
+    background: linear-gradient(135deg, #eab308, #ca8a04);
+    color: white;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-weight: 600;
+    box-shadow: 0 5px 15px rgba(234, 179, 8, 0.25);
+    position: relative;
+    overflow: hidden;
+}
+
+.badge-gradient-secondary {
+    background: linear-gradient(135deg, #64748b, #475569);
+    color: white;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-weight: 600;
+    box-shadow: 0 5px 15px rgba(100, 116, 139, 0.25);
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+.btn-gradient-pink-gold {
+    background: linear-gradient(135deg, #ec4899, #f97316);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    box-shadow: 0 8px 25px rgba(236, 72, 153, 0.3);
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-gradient-pink-gold:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(236, 72, 153, 0.4);
+}
+
+.btn-gradient-pink-gold::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+    transform: translateX(-100%);
+    transition: transform 0.6s;
+}
+
+.btn-gradient-pink-gold:hover::before {
+    transform: translateX(100%);
+}
+
+.btn-gradient-blue-green {
+    background: linear-gradient(135deg, #3b82f6, #10b981);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-gradient-blue-green:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(59, 130, 246, 0.4);
+}
+
+.btn-gradient-blue-green::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+    transform: translateX(-100%);
+    transition: transform 0.6s;
+}
+
+.btn-gradient-blue-green:hover::before {
+    transform: translateX(100%);
+}
+
+.btn-gradient-delete {
+    background: linear-gradient(135deg, #ef4444, #b91c1c);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    box-shadow: 0 8px 25px rgba(239, 68, 68, 0.3);
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-gradient-delete:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(239, 68, 68, 0.4);
+}
+
+.btn-gradient-delete::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+    transform: translateX(-100%);
+    transition: transform 0.6s;
+}
+
+.btn-gradient-delete:hover::before {
+    transform: translateX(100%);
+}
+
+.btn-gradient-add {
+    background: linear-gradient(135deg, #10b981, #059669);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    box-shadow: 0 8px 25px rgba(16, 185, 129, 0.3);
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-gradient-add:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(16, 185, 129, 0.4);
+}
+
+.btn-gradient-add::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+    transform: translateX(-100%);
+    transition: transform 0.6s;
+}
+
+.btn-gradient-add:hover::before {
+    transform: translateX(100%);
+}
+
+.btn-gradient-view {
+    background: linear-gradient(135deg, #4f46e5, #818cf8);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    box-shadow: 0 8px 25px rgba(79, 70, 229, 0.3);
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-gradient-view:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(79, 70, 229, 0.4);
+}
+
+.btn-gradient-view::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+    transform: translateX(-100%);
+    transition: transform 0.6s;
+}
+
+.btn-gradient-view:hover::before {
+    transform: translateX(100%);
+}
+
+.btn-gradient-edit {
+    background: linear-gradient(135deg, #f59e0b, #ea580c);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    box-shadow: 0 8px 25px rgba(245, 158, 11, 0.3);
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-gradient-edit:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(245, 158, 11, 0.4);
+}
+
+.btn-gradient-edit::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+    transform: translateX(-100%);
+    transition: transform 0.6s;
+}
+
+.btn-gradient-edit:hover::before {
+    transform: translateX(100%);
+}
+
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.pagination .page-link {
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.pagination .page-link:hover {
+    background-color: #f8f9fa;
+    color: #000;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #343a40;
+    border-color: #343a40;
+    color: #fff;
+}
+
+.pagination .page-item.disabled .page-link {
+    color: #aaa;
+}
+

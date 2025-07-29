@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_button_green"
+    android:padding="12dp"
+    android:layout_marginBottom="8dp"
+    android:elevation="4dp">
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Titre du Livre"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/textIsbn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ISBN : 123456789"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:layout_below="@id/textTitle"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/textGenre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Genre : Fiction"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:layout_below="@id/textIsbn"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/textDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description courte du livre..."
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:layout_below="@id/textGenre"
+        android:layout_marginTop="4dp"/>
+
+</RelativeLayout>

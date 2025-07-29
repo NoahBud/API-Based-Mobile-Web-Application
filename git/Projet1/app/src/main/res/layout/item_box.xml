@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/green_pastel"
+    android:padding="16dp"
+    android:layout_marginBottom="8dp"
+    android:elevation="4dp"
+    android:layout_centerHorizontal="true">
+
+    <!-- Titre : Nom de la Box -->
+<TextView
+android:id="@+id/textName"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Nom de la Box"
+android:textSize="20sp"
+android:textStyle="bold"
+android:textColor="@color/white"
+android:layout_alignParentTop="true"
+android:layout_alignParentStart="true"/>
+
+    <!-- ID de la Box avec une couleur plus discrète -->
+<TextView
+android:id="@+id/textId"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="ID : 123"
+android:textSize="14sp"
+android:textColor="@color/white"
+android:layout_below="@id/textName"
+android:layout_alignParentStart="true"
+android:layout_marginTop="8dp"/>
+
+    <!-- Adresse de la Box -->
+<TextView
+android:id="@+id/textAddress"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Adresse de la Box"
+android:textSize="16sp"
+android:textColor="@color/white"
+android:layout_below="@id/textId"
+android:layout_alignParentStart="true"
+android:layout_marginTop="8dp"/>
+    </RelativeLayout>

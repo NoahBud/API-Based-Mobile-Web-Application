@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/background_gradient_beige"
+    android:gravity="center_horizontal">
+
+    <!-- Bouton de retour avec icône (placé en haut à gauche) -->
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:contentDescription="Retour"
+        android:background="@android:color/transparent"
+        android:layout_gravity="start"
+        android:padding="8dp"/>
+
+    <!-- Titre de l'option -->
+    <TextView
+        android:id="@+id/tvOptionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ajouter un livre à la boîte"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Bouton Scanner -->
+    <Button
+        android:id="@+id/btnScan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scanner"
+        android:textAllCaps="false"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Bouton Ajouter manuellement -->
+    <Button
+        android:id="@+id/btnAddManually"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ajouter manuellement"
+        android:textAllCaps="false"/>
+</LinearLayout>

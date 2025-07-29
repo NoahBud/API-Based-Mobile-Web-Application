@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient_beige"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/reservationMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Êtes-vous sûr de vouloir prendre ce livre ?"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="80dp" />
+
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Annuler"
+        android:background="@drawable/background_box"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/reservationMessage"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/confirmButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirmer"
+        android:background="@drawable/background_box"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/cancelButton"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

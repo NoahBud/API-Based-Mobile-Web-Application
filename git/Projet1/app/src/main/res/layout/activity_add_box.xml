@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient_beige"
+    tools:context=".activity.AddBoxActivity">
+
+
+    <TextView
+        android:id="@+id/tvAddBoxTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ajouter une Boîte"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp" />
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nom de la boîte"
+        android:inputType="text"
+        android:padding="12dp"
+        android:background="@drawable/rounded_edittext"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:layout_marginHorizontal="32dp"
+        android:layout_below="@id/tvAddBoxTitle"
+        android:layout_marginTop="40dp"
+        android:drawableStart="@drawable/ic_box"
+        android:drawablePadding="8dp"/>
+
+    <EditText
+        android:id="@+id/addressEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Adresse"
+        android:inputType="text"
+        android:padding="12dp"
+        android:background="@drawable/rounded_edittext"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:layout_marginHorizontal="32dp"
+        android:layout_below="@id/nameEditText"
+        android:layout_marginTop="20dp"
+        android:drawableStart="@drawable/ic_location"
+        android:drawablePadding="8dp"/>
+
+    <EditText
+        android:id="@+id/etatEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="État"
+        android:inputType="text"
+        android:padding="12dp"
+        android:background="@drawable/rounded_edittext"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:layout_marginHorizontal="32dp"
+        android:layout_below="@id/addressEditText"
+        android:layout_marginTop="20dp"
+        android:drawableStart="@drawable/ic_info"
+        android:drawablePadding="8dp"/>
+
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Ajouter"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:paddingHorizontal="55dp"
+        android:paddingVertical="4dp"
+        android:elevation="1dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/etatEditText"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_button_green"
+        app:backgroundTint="@null"/>
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="53dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_button_green"
+        app:backgroundTint="@null"
+        app:icon="@drawable/ic_back"
+        app:iconSize="24dp"
+        app:iconTint="@color/white" />
+
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.LoginActivity">
+
+    <!-- Titre Connexion -->
+    <TextView
+        android:id="@+id/tvLoginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connexion"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"/>
+
+    <!-- Champ Email avec icône -->
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Adresse e-mail"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_below="@id/tvLoginTitle"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_edittext"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:drawableStart="@drawable/ic_email"
+        android:drawablePadding="8dp"/>
+
+    <!-- Champ Mot de Passe avec icône -->
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mot de passe"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_below="@id/emailEditText"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_edittext"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawablePadding="8dp"/>
+
+    <!-- Bouton Connexion -->
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Se connecter"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:paddingHorizontal="55dp"
+        android:paddingVertical="4dp"
+        android:elevation="1dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/passwordEditText"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_button_green"
+        app:backgroundTint="@null"/>
+
+    <!-- Bouton Retour sous forme d'icône (en haut à gauche) -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/back"
+        android:elevation="4dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="16dp"
+        android:background="@android:color/transparent"
+        app:backgroundTint="@null"
+        app:icon="@drawable/ic_back"
+        app:iconGravity="textStart"
+        app:iconPadding="10dp"
+        app:iconSize="32dp"
+        app:iconTint="@color/black"
+        app:cornerRadius="16dp"/>
+
+    <!-- Bouton S'inscrire -->
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Créer un compte"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:paddingHorizontal="40dp"
+        android:paddingVertical="4dp"
+        android:elevation="1dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/loginButton"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_button_green"
+        app:backgroundTint="@null"/>
+
+    <!-- Illustration en bas à droite (positionnée par rapport aux marges) -->
+    <ImageView
+        android:id="@+id/ivNature"
+        android:layout_width="wrap_content"
+        android:layout_height="305dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="95dp"
+        android:contentDescription="@string/nature_illustration"
+        android:src="@drawable/ic_nature_illustration" />
+
+</RelativeLayout>

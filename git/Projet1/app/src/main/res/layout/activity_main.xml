@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingRegistered" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:padding="16dp"
+        tools:context=".activity.MainActivity">
+
+
+        <ImageView
+            android:id="@+id/menuIcon"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="10dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Menu"
+            android:src="@drawable/ic_menu" />
+
+        <!-- Barre de recherche -->
+        <SearchView
+            android:id="@+id/searchBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="66dp"
+            android:layout_toEndOf="@id/menuIcon"
+            android:background="@drawable/rounded_search_background"
+            android:queryHint="Rechercher une boîte ou un livre..." />
+
+        <!-- Bouton Profil -->
+        <ImageView
+            android:id="@+id/btnProfile"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Profil"
+            android:src="@drawable/profil"
+            android:clickable="true"
+            android:focusable="true" />
+
+
+        <!-- Menu déroulant -->
+        <LinearLayout
+            android:id="@+id/menuContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/menuIcon"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:background="@drawable/menu_background"
+            android:padding="12dp"
+            android:elevation="6dp"
+            android:alpha="0.95">
+
+            <!-- Bouton Connexion -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnConnexion"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Se connecter"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/beige"
+                android:icon="@drawable/ic_login"
+                app:iconGravity="textStart"
+                app:iconPadding="10dp"
+                app:cornerRadius="16dp"
+                app:rippleColor="@color/ripple_white" />
+
+            <!-- Bouton Déconnexion -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLogout"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Se déconnecter"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/red"
+                android:icon="@drawable/ic_logout"
+                app:iconGravity="textStart"
+                app:iconPadding="10dp"
+                app:cornerRadius="16dp"
+                app:rippleColor="@color/white"
+                android:visibility="gone" />
+
+            <!-- Bouton QR Code -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnQRCode"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Scanner QR Code"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/beige"
+                android:icon="@drawable/ic_qr_code"
+                app:iconGravity="textStart"
+                app:iconPadding="10dp"
+                app:cornerRadius="16dp"
+                app:rippleColor="@color/ripple_white" />
+
+            <!-- Bouton Voir les boîtes -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnVoirBoxes"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Voir les boîtes"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/beige"
+                app:iconGravity="textStart"
+                app:iconPadding="10dp"
+                app:cornerRadius="16dp"
+                app:rippleColor="@color/ripple_white" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</FrameLayout>
